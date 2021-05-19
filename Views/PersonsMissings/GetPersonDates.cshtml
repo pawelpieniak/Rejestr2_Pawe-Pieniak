@@ -1,0 +1,16 @@
+﻿@using Rejestr_PawełPieniak.Models
+@model IEnumerable<PersonsMissing>
+
+@foreach (PersonsMissing p in Model)
+{
+    <tr>
+        <td>@p.Name</td>
+        <td>@p.LastName</td>
+        <td>@p.Gender</td>
+        <td>@p.DateOfBirth</td>
+        <td>@p.DateOfDisappearance</td>
+        <td>@p.PictureName</td>
+        <td>@p.CityOfDisappearance</td>
+        <td>@p.LocationOfDisappearance</td>
+    </tr>
+}
